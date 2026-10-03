@@ -149,3 +149,11 @@ python -m venv .venv
 ```bash
 pip install -r requirements.txt
 ```
+
+Запуск приложения
+
+`Убедитесь что вы в директории /pigeon_course`
+
+```bash
+uvicorn main:app
+```
