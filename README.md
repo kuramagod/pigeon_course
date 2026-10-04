@@ -176,6 +176,18 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+Перейти в окружение
+
+`Для Windows`
+```bash
+.venv/scripts/activate
+```
+
+`Mac/Linux`
+```bash
+source .venv/bin/activate
+```
+
 Запуск приложения
 
 `Убедитесь что вы в директории /pigeon_course`
