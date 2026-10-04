@@ -121,6 +121,32 @@
 
 ---
 
+### PATCH /tasks/{id}/complete
+
+Обновление статуса задачи, выполнено либо не выполнено. 
+
+**Path-параметры**
+
+| Имя | Тип | Обяз. | Описание |
+|-----|-----|-------|----------|
+| `id` | string | да | ID задачи |
+
+
+**Ответ `200`**
+```json
+{
+  "id": "100",
+  "title": "Имя задачи",
+  "description": "Описание задачи",
+  "is_completed": true,
+  "created_at": "2026-01-15T10:30:00Z"
+}
+```
+
+**Ошибки:** `404`
+
+---
+
 ### DELETE /tasks/{id}
 
 Удалить задачу по ID.
@@ -155,5 +181,5 @@ pip install -r requirements.txt
 `Убедитесь что вы в директории /pigeon_course`
 
 ```bash
-uvicorn main:app
+uvicorn app.main:app --reload
 ```
